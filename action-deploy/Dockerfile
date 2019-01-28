@@ -14,5 +14,5 @@ COPY LICENSE README.md THIRD_PARTY_NOTICE.md /
 RUN yarn global add @sanity/cli
 
 COPY entrypoint.sh /entrypoint.sh
-
+COPY ../ .
 ENTRYPOINT ["/entrypoint.sh"]
