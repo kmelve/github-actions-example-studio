@@ -4,6 +4,6 @@ workflow "Deploy" {
 }
 
 action "Deploy Studio " {
-  uses = "docker://kmelve/github-actions-sanity-io"
+  uses = "./action-deploy"
   secrets = ["SANITY_AUTH_TOKEN"]
 }
