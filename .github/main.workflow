@@ -1,9 +1,10 @@
 workflow "Deploy" {
   on = "push"
-  resolves = ["Deploy Studio "]
+  resolves = ["docker://kmelve/github-actions-sanity-io"]
 }
 
-action "Deploy Studio " {
-  uses = "./action-deploy"
+action "docker://kmelve/github-actions-sanity-io" {
+  uses = "docker://kmelve/github-actions-sanity-io"
+  args = "deploy"
   secrets = ["SANITY_AUTH_TOKEN"]
 }
