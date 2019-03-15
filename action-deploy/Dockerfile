@@ -12,7 +12,7 @@ LABEL "com.github.actions.color"="red"
 COPY LICENSE README.md THIRD_PARTY_NOTICE.md /
 
 RUN yarn global add @sanity/cli
-
+RUN which sanity
 COPY entrypoint.sh /entrypoint.sh
-COPY ../ .
+
 ENTRYPOINT ["/entrypoint.sh"]
