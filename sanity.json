@@ -12,13 +12,10 @@
     "@sanity/components",
     "@sanity/default-layout",
     "@sanity/default-login",
-    "@sanity/desk-tool",
-    "my-custom-tool"
+    "@sanity/desk-tool"
   ],
-  "parts": [
-    {
-      "name": "part:@sanity/base/schema",
-      "path": "./schemas/schema.js"
-    }
-  ]
+  "parts": [{
+    "name": "part:@sanity/base/schema",
+    "path": "./schemas/schema.js"
+  }]
 }
